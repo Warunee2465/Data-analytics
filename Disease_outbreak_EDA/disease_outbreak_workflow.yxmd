@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.1">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>disease_outbreak.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Guinea" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Liberia" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_SierraLeone" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Nigeria" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Senegal" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_UnitedStates" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Spain" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Cases_Mali" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Guinea" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Liberia" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_SierraLeone" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Nigeria" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Senegal" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_UnitedStates" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Spain" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+            <Field name="Deaths_Mali" size="254" source="File: C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="126" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Date" />
+            <Field field="Day" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date" selected="False" />
+            <Field field="Day" selected="False" />
+            <Field field="Cases_Guinea" selected="True" />
+            <Field field="Cases_Liberia" selected="True" />
+            <Field field="Cases_SierraLeone" selected="True" />
+            <Field field="Cases_Nigeria" selected="True" />
+            <Field field="Cases_Senegal" selected="True" />
+            <Field field="Cases_UnitedStates" selected="True" />
+            <Field field="Cases_Spain" selected="True" />
+            <Field field="Cases_Mali" selected="True" />
+            <Field field="Deaths_Guinea" selected="True" />
+            <Field field="Deaths_Liberia" selected="True" />
+            <Field field="Deaths_SierraLeone" selected="True" />
+            <Field field="Deaths_Nigeria" selected="True" />
+            <Field field="Deaths_Senegal" selected="True" />
+            <Field field="Deaths_UnitedStates" selected="True" />
+            <Field field="Deaths_Spain" selected="True" />
+            <Field field="Deaths_Mali" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="210" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Date" />
+            <Field field="Day" />
+            <Field field="Name" />
+            <Field field="Value" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Name</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Name</RootName>
+          <Delimeters value="_" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeParse([Date], &quot;%m/%d/%y&quot;)" field="Date" size="254" type="V_String" />
+            <FormulaField expression="If IsNull([Value]) THEN &quot;0&quot; Else [Value] Endif" field="Value" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Date = DateTimeParse([Date], "%m/%d/%y")
+Value = If IsNull([Value]) THEN "0" Els...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date" selected="True" type="Date" size="10" />
+            <SelectField field="Day" selected="True" />
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Name1" selected="True" rename="Tag" />
+            <SelectField field="Name2" selected="True" rename="Country" />
+            <SelectField field="Value" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="630" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="64" MaxRecords="">C:\Users\acer\OneDrive\เดสก์ท็อป\MB221_Exam\disease_outbreak_tidydata.hyper</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <OutputOption>Overwrite</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>disease_outbreak_tidydata.hyper</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>disease_outbreak_workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="94c07465-ae60-4b13-bd21-d82943dde70e" />
+      <Telemetry>
+        <PreviousWorkflowId value="620862cf-185e-4c38-8c16-c164a168876e" />
+        <OriginWorkflowId value="d0976392-7b49-4978-8cd2-7d4c8ecbfdc6" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
